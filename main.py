@@ -59,7 +59,15 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(df_train_ml.drop('Survived',axis=1), df_train_ml['Survived'], test_size=0.30, random_state=101)
 X_train_sc, X_test_sc, y_train_sc, y_test_sc = train_test_split(df_train_ml_sc, df_train_ml['Survived'], test_size=0.30, random_state=101)
 
+# unscaled
+X_train_all = df_train_ml.drop('Survived',axis=1)
+y_train_all = df_train_ml['Survived']
+X_test_all = df_test_ml
 
+# scaled
+X_train_all_sc = df_train_ml_sc
+y_train_all_sc = df_train_ml['Survived']
+X_test_all_sc = df_test_ml_sc
 
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
@@ -71,6 +79,13 @@ print(confusion_matrix(y_test, pred_logreg))
 print(classification_report(y_test, pred_logreg))
 print(accuracy_score(y_test, pred_logreg))
 
+logreg.fit(X_train_all, y_train_all)
+pred_all_logreg = logreg.predict(X_test_all)
+sub_logreg = pd.DataFrame()
+sub_logreg['PassengerId'] = df_test['PassengerId']
+sub_logreg['Survived'] = pred_all_logreg
+sub_logreg.to_csv('logmodel.csv',index=False)
+
 
 from sklearn.svm import SVC
 svc = SVC(gamma = 0.01, C = 100)#, probability=True)
@@ -80,3 +95,10 @@ pred_svc = svc.predict(X_test_sc)
 print(confusion_matrix(y_test_sc, pred_svc))
 print(classification_report(y_test_sc, pred_svc))
 print(accuracy_score(y_test_sc, pred_svc))
+
+logreg.fit(X_train_all_sc, y_train_all_sc)
+pred_all_logreg = logreg.predict(X_test_all_sc)
+sub_logreg = pd.DataFrame()
+sub_logreg['PassengerId'] = df_test['PassengerId']
+sub_logreg['Survived'] = pred_all_logreg
+sub_logreg.to_csv('logmodel_svc.csv',index=False)
