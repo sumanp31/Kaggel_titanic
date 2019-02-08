@@ -32,7 +32,7 @@ df_train_ml.dropna(inplace=True)
 passenger_id = df_test_ml['PassengerId']
 df_test_ml = pd.get_dummies(df_test_ml, columns=['Sex', 'Embarked', 'Pclass'], drop_first=True)
 df_test_ml.drop(['PassengerId','Name','Ticket', 'Cabin'],axis=1,inplace=True)
-df_train_ml.head(10)
+df_test_ml.head(10)
 
 df_train_ml.info()
 df_test_ml.info()
