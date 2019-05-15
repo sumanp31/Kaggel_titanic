@@ -50,6 +50,18 @@ The algorithms are compared using precision, recall and accuracy.
 ![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_8.png)
 ![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_9.png)
 
+#### Dependency on Age
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_10.png) 
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_11.png) 
  
+#### Dependency on no of siblings onboard
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_12.png)
+
+#### Dependency on presence of parent/ children on board 
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_13.png) 
+
+#### Dependency on ticket fare
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_14.png) 
+
 
 
