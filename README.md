@@ -40,3 +40,16 @@ The algorithms are compared using precision, recall and accuracy.
 
 #### Dependency of survival on sex
 ![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_3.png) 
+
+#### Dependency of survival on ticket class
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_4.png)
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_5.png) 
+
+#### Dependency on port of embarkment
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_7.png) 
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_8.png)
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_9.png)
+
+ 
+
+
