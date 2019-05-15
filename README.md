@@ -63,5 +63,13 @@ The algorithms are compared using precision, recall and accuracy.
 #### Dependency on ticket fare
 ![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_14.png) 
 
+### Algorithm comparision
+The dataset was split into train and test dataset. 30% of dataset was randomly selected and used for testing. depending on the comparision between predicted category and original output, the following result was achieved. 
 
+1. **Logistic regression**
 
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/log_reg.png) 
+
+2. **SVM**
+
+![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/svc.png) 
