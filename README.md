@@ -64,7 +64,7 @@ The algorithms are compared using precision, recall and accuracy.
 ![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/Figure_14.png) 
 
 ### Algorithm comparision
-The dataset was split into train and test dataset. 30% of dataset was randomly selected and used for testing. depending on the comparision between predicted category and original output, the following result was achieved. 
+The dataset was split into train and test dataset. 30% of dataset was randomly selected and used for cross validation. depending on the comparision between predicted category and original output, the following result was achieved. 
 
 1. **Logistic regression**
 
@@ -73,3 +73,9 @@ The dataset was split into train and test dataset. 30% of dataset was randomly s
 2. **SVM**
 
 ![](https://github.com/sumanp31/Kaggel_titanic/blob/master/Plot/svc.png) 
+
+
+### Algorithm output
+The coefficient calculated using the above algorithms were than predict the survivour for Test set. The output for each algorithm can be found here:
+1. **Logistic regression** : [log_reg.csv](https://github.com/sumanp31/Kaggel_titanic/blob/master/output/log_reg.csv) 
+2. **SVM** : [svc.csv](https://github.com/sumanp31/Kaggel_titanic/blob/master/output/svc.csv) 
