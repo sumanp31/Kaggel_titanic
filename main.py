@@ -69,6 +69,8 @@ X_train_all_sc = df_train_ml_sc
 y_train_all_sc = df_train_ml['Survived']
 X_test_all_sc = df_test_ml_sc
 
+print X_test_all
+
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 from sklearn.linear_model import LogisticRegression
@@ -84,7 +86,7 @@ pred_all_logreg = logreg.predict(X_test_all)
 sub_logreg = pd.DataFrame()
 sub_logreg['PassengerId'] = df_test['PassengerId']
 sub_logreg['Survived'] = pred_all_logreg
-sub_logreg.to_csv('logmodel.csv',index=False)
+sub_logreg.to_csv('output/logmodel.csv',index=False)
 
 
 from sklearn.svm import SVC
@@ -101,4 +103,4 @@ pred_all_logreg = logreg.predict(X_test_all_sc)
 sub_logreg = pd.DataFrame()
 sub_logreg['PassengerId'] = df_test['PassengerId']
 sub_logreg['Survived'] = pred_all_logreg
-sub_logreg.to_csv('logmodel_svc.csv',index=False)
+sub_logreg.to_csv('output/logmodel_svc.csv',index=False)
